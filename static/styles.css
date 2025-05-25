@@ -1,0 +1,86 @@
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contact list */
+.contact-item {
+  padding: 0.75rem;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s;
+}
+
+.contact-item:hover {
+  background-color: #e6e6e6;
+}
+
+.contact-item.active {
+  background-color: #d1e7dd;
+}
+
+/* Chat window */
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.message {
+  max-width: 60%;
+  margin-bottom: 0.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+/* Mensajes del contacto (lado izquierdo) */
+.message-left {
+  align-self: flex-start;
+  background-color: #f1f0f0;
+}
+
+/* Mensajes del usuario (lado derecho) */
+.message-right {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+}
+
+/* Input de mensaje */
+.message-input {
+  display: flex;
+  padding: 0.75rem;
+  border-top: 1px solid #ddd;
+  background-color: #fafafa;
+}
+
+.message-input input[type="text"] {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 9999px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.message-input button {
+  margin-left: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #00a884;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.message-input button:hover {
+  background-color: #029e7b;
+}
